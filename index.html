@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Previsão do Tempo</h1>
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Digite o nome da cidade" autocomplete="off">
+            <button id="searchButton">Buscar</button>
+        </div>
+    </header>
+    <main>
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <img id="weatherIcon" src="https://openweathermap.org/img/wn/13n.png" alt="Weather Icon">
+        </div>
+        <p id="errorMessage" class="hidden">Cidade não encontrada. Por favor, tente novamente.</p>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pisca</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
